@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <section>
+      <h1>Bài 1: Quản lý tuyển sinh</h1>
+      <div>
+        <input type="number" placeholder="Nhập điểm chuẩn" id="diemchuan" />
+        <select name="khuvuc" id="khuvuc">
+          <option value="">Chọn khu vực</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+        <select name="doituong" id="doituong">
+          <option value="">Chọn khu vực</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div>
+        <input type="number" placeholder="Điểm môn thứ 1" id="diem1" />
+        <input type="number" placeholder="Điểm môn thứ 2" id="diem2" />
+        <input type="number" placeholder="Điểm môn thứ 3" id="diem3" />
+      </div>
+      <button id="btnKetQua">Kết Quả</button>
+      <h2 id="result"></h2>
+    </section>
+    <!-- Bài 2 -->
+    <section>
+      <h1>Bài 2: Tính tiền điện</h1>
+      <input type="text" placeholder="Nhập họ tên" id="name" />
+      <input type="number" placeholder="Nhập số kwh" id="soKwh" />
+      <button id="btnTienDien">Tính tiền điện</button>
+      <h2 id="result2"></h2>
+    </section>
+    <!-- Bài 3 -->
+    <section>
+      <h1>Bài 3: Tính thuế thu nhập cá nhân</h1>
+      <input type="text" placeholder="Nhập họ tên" id="hoTen" />
+      <input
+        type="number"
+        placeholder="Nhập tổng thu nhập 1 năm"
+        id="thuNhap"
+      />
+      <input
+        type="number"
+        placeholder="Nhập số người phụ thuộc"
+        id="nguoiPhuThuoc"
+      />
+      <button id="btnTienThue">Tính tiền thuế</button>
+      <h2 id="result3"></h2>
+    </section>
+    <!-- Bài 4 -->
+    <section>
+      <h1>Bài 4: Tính tiền cáp</h1>
+      <select id="customerType">
+        <option value="nhaDan">Nhà dân</option>
+        <option value="doanhNghiep">Doanh nghiệp</option>
+      </select>
+      <input
+        type="text"
+        id="customerId"
+        placeholder="Nhập mã khách hàng"
+        required
+      />
+      <input type="number" id="channels" placeholder="Nhập số kênh cao cấp" />
+      <input
+        type="number"
+        id="ketnoi"
+        style="display: none"
+        placeholder="Nhập số kết nối"
+      />
+      <button type="button" id="calculateBtn">Tính tiền cáp</button>
+      <h2 id="result4"></h2>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
